@@ -1,0 +1,153 @@
+/* UseRefExploration.css */
+
+.exploration-container {
+    padding: 2rem;
+    background-color: #1a1a1a;
+    background: #1a1a1a;
+    border-radius: 16px;
+    color: #ffffff;
+    margin: 2rem auto;
+    border: 1px solid #333;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+    max-width: 800px;
+    width: 90%;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+.exploration-header {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    background: linear-gradient(45deg, #646cff, #535bf2);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+}
+
+.exploration-section {
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    background-color: #242424;
+    border-radius: 12px;
+    border: 1px solid #333;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+/* Subtle hover effect for sections */
+.exploration-section:hover {
+    border-color: #444;
+    transform: translateY(-2px);
+}
+
+.exploration-sub-header {
+    margin-top: 0;
+    color: #646cff;
+    font-size: 1.3rem;
+    margin-bottom: 0.8rem;
+}
+
+.exploration-control-group {
+    display: flex;
+    gap: 12px;
+    margin-top: 1rem;
+    flex-wrap: wrap; /* Responsive wrap */
+}
+
+.exploration-input {
+    padding: 12px 16px;
+    border-radius: 8px;
+    border: 1px solid #444;
+    background-color: #0f0f0f;
+    color: white;
+    flex: 1;
+    min-width: 200px; /* Ensure enough space on mobile before wrapping */
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.exploration-input:focus {
+    border-color: #646cff;
+    box-shadow: 0 0 0 2px rgba(100, 108, 255, 0.2);
+}
+
+.exploration-button {
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: none;
+    background-color: #535bf2;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.2s, transform 0.1s;
+    white-space: nowrap;
+}
+
+.exploration-button:hover {
+    background-color: #646cff;
+}
+
+.exploration-button:active {
+    transform: scale(0.98);
+}
+
+.exploration-button-secondary {
+    background-color: #646cff;
+}
+
+.exploration-button-secondary:hover {
+    background-color: #7c83ff;
+}
+
+.exploration-highlight {
+    font-weight: 800;
+    color: #646cff;
+    font-size: 1.2rem;
+}
+
+.exploration-stats {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+    padding: 1.2rem;
+    background-color: #0f0f0f;
+    border-radius: 8px;
+    border: 1px solid #222;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+/* Responsiveness */
+@media (max-width: 600px) {
+    .exploration-container {
+        padding: 1rem;
+        width: 100%;
+        margin: 1rem auto;
+        border-radius: 0; /* Full width on mobile looks cleaner often */
+    }
+
+    .exploration-header {
+        font-size: 1.5rem;
+    }
+
+    .exploration-section {
+        padding: 1rem;
+    }
+
+    .exploration-control-group {
+        flex-direction: column;
+    }
+
+    .exploration-button {
+        width: 100%;
+    }
+
+    .exploration-stats {
+        flex-direction: column;
+        align-items: center;
+    }
+}
