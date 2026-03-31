@@ -18,16 +18,15 @@ function App() {
 
   useEffect(() => {
     getCatFact(); // call on load
-
-  },[count]);
+  },[]);
  
   return (
     <div style={{ textAlign: "center", marginTop: "50px" }}>
       <h1>Cat Fact App</h1>
 
-      {/* {loading ? <p>Loading...</p> : <p>{fact}</p>} */}
+      {loading ? <p>Loading...</p> : <p>{fact}</p>}
 
-      if(loading){<p>loading.....</p>}else{{fact}}
+      {/* if(loading){<p>loading.....</p>}else{{fact}} */}
 
       <button onClick={getCatFact}>Get New Fact</button>
     </div>
